@@ -1,0 +1,160 @@
+body{
+    background-color: #67d7cc;;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    margin: 50px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+input:focus{
+    outline: none;
+    border:1px solid blue;  
+}
+form h1{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+
+form input#todo-input{
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 10px;
+    border:1px solid white;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+}
+
+.edit-wrapper{
+    margin: 1vw auto;
+    height: 2rem;
+    width: 100%;
+    color: white;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editBtn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-style: none;
+    width: 10%;
+    font-size: 1.2rem;
+    margin: 0 2vw;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+
+.cancelBtn{
+    background-color: transparent;
+    color: black;
+    border-style: none;
+    width: 10%;
+    font-size: 1.2rem;
+    margin: 0 2vw;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1.5px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+#add-item{
+    margin: 2vw auto;
+    height: 2rem;
+    width: 20%;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 25px 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(212, 206, 206);
+}
+
+.title{
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+    font-size: 1.5rem;
+    color:blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.edit-input{
+    width: 50%;
+    text-align: left;
+    padding-right: 25px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.delete-item{
+    border-radius: 5px;
+    border:1px solid red;
+    background-color: red;
+    color:whitesmoke;
+    width: 10%;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .delete-item:hover{
+    background-color: red;
+}    */
+
+.edit-item{
+    border-radius: 5px;
+    border:1px solid lightgreen;
+    background-color: rgb(162, 240, 162);
+    color: whitesmoke;
+    width: 10%; 
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* .edit-item:hover{
+    background-color: rgb(255, 255, 255);
+} */
+
+.not-checked{
+    text-decoration: none;
+}
+.checked{
+    text-decoration: line-through;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: 0.2em;
+}
